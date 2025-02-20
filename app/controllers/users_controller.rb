@@ -16,5 +16,4 @@ class UsersController < ApplicationController
     redirect_to users_show_path(params[:id])
   end
 
-
 end
