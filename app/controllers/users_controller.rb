@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     redirect_to users_edit_path(@user)
   end
 
-  def updated
+  def update
     @user = User.find(params[:id])
     @user.edit
     redirect_to users_show_path(params[:id])
